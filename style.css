@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 body{
-    background-size: cover;
+    flex: 1;
 }
 
 /*header*/
@@ -39,8 +39,8 @@ body{
     flex-wrap: wrap;
     color: white;
     justify-content: center;
-    gap: 30px;
-    font-size:  clamp(28px, 5vw, 48px);;
+    gap: clamp(4px, 2vw, 30px);
+    font-size:  clamp(20px, 5vw, 48px);;
     margin-bottom: 4rem;
 }
 
@@ -55,18 +55,19 @@ body{
 
 .mid-description{
     color: white;
-    font-size: clamp(16px, 2.5vw, 24px);
+    font-size: clamp(14px, 2.5vw, 24px);
     text-align: center;
     font-family: poppins, serif;
 }
 
 .name{
     display: flex;
-    gap: 10px;
+    gap: 8px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .mid-name{
-    font-size: clamp(16px, 2.5vw, 24px);
+    font-size: clamp(14px, 2.5vw, 24px);
     font-family: poppins, serif;
     font-weight: bolder;
     color: rgb(144, 212, 144);
@@ -161,4 +162,30 @@ img{
     text-align: center;
     font-weight: 100;
     font-size: 16px;
+}
+
+/*responsivo*/
+@media screen and (max-width: 426px) {
+  .content{
+    padding: 5rem 2rem;
+  }
+  .content-button{
+    padding: 1rem 8rem;
+  }
+}
+@media screen and (max-width: 426px) {
+  .name{
+    gap: 6px;
+  }
+}
+@media screen and (max-width: 422px) {
+  .name{
+    gap: 5px;
+  }
+}
+@media screen and(max-width: 420){
+    .mid-description{
+        font-size: ();
+    }
+    
 }
