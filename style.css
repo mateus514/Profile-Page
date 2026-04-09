@@ -35,7 +35,6 @@ body{
     min-height: 80vh;
     padding: 9rem 1.5rem 3rem;
     text-align: center;
-    height: 85vh;
 }
 .mid{
     display: flex;
