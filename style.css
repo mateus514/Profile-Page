@@ -92,10 +92,20 @@ body{
     font-size: clamp(14px, 2vw, 20px);
     text-decoration: underline gray;
 }
+
+@keyframes seta{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(12px);
+    }
+}
 .mid-seta{
     margin-top: 3rem;
     font-size: clamp(36px, 8vw, 64px);
     font-family: poppins, sans-serif;
+    animation: seta 0.3s ease-in-out infinite alternate;
 }
 
 
